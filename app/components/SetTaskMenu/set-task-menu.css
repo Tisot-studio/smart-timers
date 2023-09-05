@@ -1,0 +1,87 @@
+.set-task-menu-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.set-task-menu-modal {
+    width: calc(100vw - 2em);
+    max-width: 35.75em;;
+    border-radius: .5em;
+    background-color: white;
+    padding: 1em 0;
+}
+
+.task-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    padding: .75em 1em;
+}
+
+/* task title */
+.task-title > input {
+    width: 100%;
+    font-size: 1em;
+    padding: .5em 0.2em;
+    border: none;
+    outline: none;
+}
+
+.task-title > input::placeholder {
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.8);
+}
+
+/* select options and rounds */
+.task-menu-item > select, 
+.rounds > input  {
+    width: 4em;
+    height: 2em;
+    padding: .2em 0.1em;
+    border: none;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: .2em;
+    text-align: center;
+}
+
+/* buttons */
+
+.task-menu-buttons {
+    margin-top: 1.5em;
+}
+
+.task-menu-btn {
+    width: 40%;
+    max-width: 7em;
+    height: 2.5em;
+    padding: .5em .75em;
+    text-transform: unset;
+    font-size: .9em;
+}
+
+.task-menu--cancel-btn {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: var(--primary-color);
+}
+
+@media (min-width: 50em) {
+    .task-menu-buttons {
+        justify-content: flex-end;
+    }
+
+    .task-menu--cancel-btn {
+        margin-right: 1em;
+    }
+}

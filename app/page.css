@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;
+  width: calc(100vw - 2em);
+  max-width: 38.75em;
+  max-height: 100vh;
+  /* background-color: antiquewhite; */
+}
+

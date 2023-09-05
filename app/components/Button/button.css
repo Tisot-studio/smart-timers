@@ -1,0 +1,23 @@
+.btn {
+    font-size: 1em;
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 393px;
+    height: 3em;
+    padding: 0.75em 1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: var(--tertiary-color);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:active {
+    transform: scale(0.99);
+}

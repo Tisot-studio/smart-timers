@@ -1,0 +1,91 @@
+.pomodoro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+    position: inherit;
+}
+
+.timer-info {
+    position: absolute;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    /* background-color: aliceblue; */
+}
+
+.timer-switch-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-switch-buttons button {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.timer-btn-not-active {
+    opacity: 40%;
+}
+
+@media (min-width: 35em) {
+    .timer-switch-buttons button {
+        font-size: 1.5rem;
+    }
+}
+
+.counter {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media (min-width: 35em) {
+    .counter {
+        font-size: 6rem;
+    }
+}
+
+.pomo-btn {
+    width: 50%;
+    padding: 0.2em 0.2em;
+    margin-top: 1em;
+    max-width: 7em;
+}
+
+.current-task {
+    width: 100%;
+    height: 3em;
+    padding: 0.75em 1em;
+    margin: 1em 0;
+}
+
+.no-task {
+    text-align: center;
+    opacity: 40%;
+}
+
+@media (min-width: 35em) {
+    .no-task {
+        font-size: 1.5rem;
+    }
+}

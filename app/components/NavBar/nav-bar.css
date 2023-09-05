@@ -1,0 +1,25 @@
+.nav {
+    width: 100%;
+    max-width: 38.75em;
+    height: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+@media (min-width: 50em) {
+    .nav {
+        padding: 1em 4em;
+    }
+}
+
+.nav > p {
+    font-weight: bold;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
